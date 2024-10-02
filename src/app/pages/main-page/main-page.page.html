@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Back2Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Bienvenido a Back 2 Home </ion-card-title>
+    </ion-card-header>
+    <div>
+      <img src="./assets/img/PerfilImagen.webp" alt="">
+    </div>
+    <ion-card-content>
+        <ion-button>Publicar un viaje</ion-button>
+        <ion-button>Buscar viajes</ion-button>
+        <ion-button expand="block" (click)="goToCerrarSesion()">Cerrar Sesion</ion-button>
+    </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>

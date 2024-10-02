@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Back 2 Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <div id="container">
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+      <ion-card-subtitle>Complete con sus datos personales</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre Completo:" placeholder="ej: John Doe"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Rut:"  placeholder="ej: 10.000.000-0"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Contraseña:" type="password" value="password"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Mail:" type="email" placeholder="ej: JohnDoe@gmail.com"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Numero Telefono:" type="tel" placeholder="ej: +56 935353838"></ion-input>
+      </ion-item>
+      
+      <ion-button expand="full" type="button" (click)="goToMainPage()">Completar</ion-button>
+    </ion-list>
+    
+  </ion-card>
+  </div>
+</ion-content>
