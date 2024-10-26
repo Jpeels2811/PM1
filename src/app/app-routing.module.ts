@@ -27,7 +27,11 @@ const routes: Routes = [
   {
     path: 'recover-password',
     loadChildren: () => import('./pages/Acceso/Recuperar-Pass/recover-password.module').then( m => m.RecoverPasswordPageModule)
+  },  {
+    path: 'page-error',
+    loadChildren: () => import('./pages/Error/page-error/page-error.module').then( m => m.PageErrorPageModule)
   },
+
 ];
 
 @NgModule({
